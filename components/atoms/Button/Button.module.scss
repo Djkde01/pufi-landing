@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 300;
+  background: transparent;
+  padding: 12px 32px;
+  letter-spacing: 8px;
+  &_primary {
+    transition: all 0.4s ease-in-out;
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+      background: $light;
+      letter-spacing: 4px;
+    }
+  }
+  &_secondary {
+    transition: all 0.4s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    gap: 16px;
+    &:hover {
+      letter-spacing: 4px;
+    }
+  }
+}
