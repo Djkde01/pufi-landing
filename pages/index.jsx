@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Button from "../components/atoms/Button/Button";
+import Item from "../components/molecules/Item/Item";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
 
       <Button text="shop" link="#" type="primary" />
       <Button text="ver más" link="#" type="secondary" />
+      <Item details="some text" order="even" />
+      <Item details="some text" order="odd" />
     </div>
   );
 }
