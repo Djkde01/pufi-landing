@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Button from "../components/atoms/Button/Button";
-import Item from "../components/molecules/Item/Item";
+import ItemList from "../components/organisms/ItemList/ItemList";
 
 export default function Home() {
   return (
@@ -11,10 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Button text="shop" link="#" type="primary" />
-      <Button text="ver más" link="#" type="secondary" />
-      <Item details="some text" order="even" />
-      <Item details="some text" order="odd" />
+      <ItemList />
     </div>
   );
 }
