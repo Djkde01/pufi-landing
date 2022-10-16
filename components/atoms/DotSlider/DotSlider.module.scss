@@ -1,0 +1,16 @@
+.dot {
+  background-color: $dark;
+  border-radius: 15px;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-selected {
+    outline: 2px solid $dark;
+    outline-offset: 2px;
+  }
+}
