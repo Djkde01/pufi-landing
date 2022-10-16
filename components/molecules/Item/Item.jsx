@@ -7,7 +7,7 @@ function Item({ order, details }) {
       <div
         className={`item-image item-image-${order}`}
         style={{
-          "background-image": `url(${details.background})`,
+          backgroundImage: `url(${details.background})`,
         }}
       >
         <Button text="Shop" type="primary" link="#" />
