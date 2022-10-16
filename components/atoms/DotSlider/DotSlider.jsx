@@ -1,5 +1,5 @@
-function DotSlider({ selected }) {
-  return <div className={`dot ${selected ? "dot-selected" : ""}`} />;
+function DotSlider({ number }) {
+  return <div className={`dot ${number === 1 ? "dot-selected" : ""}`} />;
 }
 
 export default DotSlider;
