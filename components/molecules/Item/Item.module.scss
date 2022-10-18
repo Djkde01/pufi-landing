@@ -20,11 +20,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     text-align: center;
     padding: 0px 30%;
-    & figure {
-      width: 100%;
+    &-name {
+      font-size: 32px;
+      font-weight: 500;
+    }
+    &-description {
+      font-size: 18px;
+      color: $light-dark;
     }
     & hr {
       width: 50px;

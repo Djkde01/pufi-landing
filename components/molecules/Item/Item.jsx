@@ -17,14 +17,14 @@ function Item({ order, details }) {
           <Image
             alt="details"
             src={details.image}
-            width="100%"
-            height="100%"
+            width={200}
+            height={200}
             objectFit="contain"
           />
         </figure>
-        <h2>{details.name}</h2>
+        <h2 className="item-content-name">{details.name}</h2>
         <hr />
-        <p>{details.description}</p>
+        <p className="item-content-description">{details.description}</p>
         <Button text="Ver más" type="secondary" link="#" />
       </div>
     </section>
