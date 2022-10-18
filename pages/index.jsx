@@ -2,6 +2,7 @@ import Head from "next/head";
 import IgContent from "../components/organisms/IgContent/IgContent";
 import ItemList from "../components/organisms/ItemList/ItemList";
 import NavBar from "../components/organisms/NavBar/NavBar";
+import Newsletter from "../components/organisms/Newsletter/Newsletter";
 import Slider from "../components/organisms/Slider/Slider";
 import { heroImages } from "../constants/constants";
 import SliderContextProvider from "../context/SliderContext";
@@ -21,6 +22,7 @@ export default function Home() {
 
       <ItemList />
       <IgContent />
+      <Newsletter />
     </div>
   );
 }
