@@ -5,8 +5,8 @@ function IgImage({ url, author }) {
     <Image
       src={url}
       alt={`photo by ${author}`}
-      width={200}
-      height={200}
+      width={300}
+      height={300}
       objectFit="cover"
     />
   );

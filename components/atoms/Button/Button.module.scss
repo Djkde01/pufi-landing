@@ -3,8 +3,9 @@
   text-transform: uppercase;
   font-weight: 300;
   background: transparent;
-  padding: 12px 32px;
+  padding: 24px 64px;
   letter-spacing: 4px;
+  font-size: 24px;
   &_primary {
     transition: all 0.4s ease-in-out;
     border: 2px solid $white;

@@ -2,14 +2,15 @@ import { useForm, ValidationError } from "@formspree/react";
 import { FaArrowRight } from "react-icons/fa";
 
 function Newsletter() {
-  const [state, handleSubmit] = useForm(process.env.FORM_ID);
+  const formId = process.env.FORM_ID;
+  const [state, handleSubmit] = useForm({ formId });
   if (state.succeeded) {
     return alert("Thank you for joining :)");
   }
 
   return (
-    <section className="igcontent">
-      <span className="igcontent-text">
+    <section className="socialcontent">
+      <span className="socialcontent-text">
         <h5>Newsletter</h5>
         <h1>Suscribite</h1>
         <p>Y enterate de todas las novedades</p>
@@ -27,7 +28,7 @@ function Newsletter() {
           className="newsletter-form-input"
           disabled={state.submitting}
         >
-          <FaArrowRight />
+          <FaArrowRight size="2rem" />
         </button>
       </form>
     </section>

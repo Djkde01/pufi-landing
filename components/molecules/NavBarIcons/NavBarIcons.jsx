@@ -10,13 +10,13 @@ function NavBarIcons() {
   const selectIcon = (name) => {
     switch (name) {
       case "Pufi PUFF":
-        return <FaCouch size="1.5rem" />;
+        return <FaCouch size="3rem" />;
       case "Pufi RAIN":
-        return <FaUmbrella size="1.5rem" />;
+        return <FaUmbrella size="3rem" />;
       case "Pufi CART":
-        return <FaShoppingBag size="1.5rem" />;
+        return <FaShoppingBag size="3rem" />;
       case "Pufi NAP":
-        return <FaCloudMoon size="1.5rem" />;
+        return <FaCloudMoon size="3rem" />;
 
       default:
         return "Not found";
