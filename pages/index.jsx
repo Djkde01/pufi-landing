@@ -1,5 +1,5 @@
 import Head from "next/head";
-import IgImageList from "../components/molecules/IgImageList/IgImageList";
+import IgContent from "../components/organisms/IgContent/IgContent";
 import ItemList from "../components/organisms/ItemList/ItemList";
 import NavBar from "../components/organisms/NavBar/NavBar";
 import Slider from "../components/organisms/Slider/Slider";
@@ -20,7 +20,7 @@ export default function Home() {
       </SliderContextProvider>
 
       <ItemList />
-      <IgImageList />
+      <IgContent />
     </div>
   );
 }
