@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import SliderContext from "../../../context/SlderContext";
+import { SliderContext } from "../../../context/SliderContext";
 
 function DotSlider({ number }) {
-  const { goToSlide, slideNumber } = useContext(SliderContext);
+  const { slideNumber, setSlideNumber } = useContext(SliderContext);
   return (
     <div
       className={`dot ${number === slideNumber ? "dot-selected" : ""}`}
@@ -10,7 +10,7 @@ function DotSlider({ number }) {
       role="menuitem"
       aria-label="sliderelement"
       onClick={() => {
-        goToSlide(number);
+        setSlideNumber(number);
       }}
     />
   );

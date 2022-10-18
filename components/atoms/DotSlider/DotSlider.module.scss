@@ -1,5 +1,5 @@
 .dot {
-  background-color: $dark;
+  background-color: $white;
   border-radius: 15px;
   height: 15px;
   width: 15px;
@@ -11,7 +11,7 @@
   }
 
   &-selected {
-    outline: 2px solid $dark;
+    outline: 2px solid $white;
     outline-offset: 2px;
   }
 }

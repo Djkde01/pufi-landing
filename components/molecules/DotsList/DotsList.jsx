@@ -1,9 +1,6 @@
-import { useContext } from "react";
-import SliderContext from "../../../context/SlderContext";
 import DotSlider from "../../atoms/DotSlider/DotSlider";
 
-function DotsList() {
-  const { slidesCount } = useContext(SliderContext);
+function DotsList({ slidesCount }) {
   const renderDots = () => {
     const dots = [];
     for (let index = 0; index < slidesCount; index += 1) {
@@ -12,7 +9,7 @@ function DotsList() {
     return dots;
   };
 
-  return <span>{renderDots()}</span>;
+  return <span className="dots">{renderDots()}</span>;
 }
 
 export default DotsList;
