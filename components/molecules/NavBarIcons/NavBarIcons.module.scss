@@ -1,7 +1,6 @@
 .navbar-items {
   display: flex;
   list-style: none;
-  color: $dark;
   & li {
     position: relative;
     display: flex;
@@ -9,6 +8,7 @@
     align-items: center;
     margin: auto 16px;
     text-transform: uppercase;
+    cursor: pointer;
     & h5 {
       margin-top: 4px;
     }
