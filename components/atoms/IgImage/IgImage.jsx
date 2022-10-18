@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-function IgImage() {
+function IgImage({ url, author }) {
   return (
     <Image
-      src="https://picsum.photos/200"
-      alt="Random image"
+      src={url}
+      alt={`photo by ${author}`}
       width={200}
       height={200}
-      className="igimage"
+      objectFit="cover"
     />
   );
 }

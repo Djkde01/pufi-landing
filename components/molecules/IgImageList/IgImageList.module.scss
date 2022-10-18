@@ -1,0 +1,5 @@
+.igimage-list {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 1px;
+}
